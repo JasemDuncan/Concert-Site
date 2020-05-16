@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+    border: 1px solid red;
+}
+
+.container{
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top:27px;
+    
+}
+
+.logo{
+    margin-left: 39px;
+}
+
+.listNav li {
+    display: inline-block;
+}
+
+.slogan {
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 28px;
+}
+
+.title {
+    height: 145px;
+    padding-left: 28px;
+    font-size: 43px;
+}
+
+.subtitle {
+    height: 166px;
+    padding-top: 30px;
+    padding-left: 39px;
+    padding-right: 50px;
+    font-size: 20px;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+.date {
+    height: 52px;
+    padding-left: 28px;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+}
+
+.copyRight {
+    height: 150px;
+    padding-left: 28px;
+    padding-top: 23px;
+    
+}
+
+.mainProgram {
+    height: 965px;
+    background-color: gray;
+}
+
+.titleMainProgram {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.itemMainProgram {
+    display: flex;
+    height: 115px;
+    margin-bottom: 14px;
+    background-color: lightslategray;
+}
+
+.logoMainProgram {
+    padding-left: 39px;
+    
+}
+
+.titleProgram {
+    min-width: 125px;
+    font-size: 20px;
+    display: flex;
+    align-items:  center;
+}
+
+.btnJoin{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnJoinCC {
+    height: 99px;
+    width: 405px;
+    font-size: 20px;
+    background-color: orange;
+}
