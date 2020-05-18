@@ -1,3 +1,34 @@
+@font-face {
+    font-family: "coco ultralight";
+    src: url("./fonts/Coco-Gothic-Ultralight-trial.ttf");
+}
+
+@font-face {
+    font-family: "coco light";
+    src: url("./fonts/Coco-Gothic-Light-trial.ttf");
+}
+
+@font-face {
+    font-family: "coco regular";
+    src: url("./fonts/Coco-Gothic-Regular-trial.ttf");
+}
+
+@font-face {
+    font-family: "coco bold";
+    src: url("./fonts/Coco-Gothic-Bold-trial.ttf");
+}
+
+@font-face {
+    font-family: "coco heavy";
+    src: url("./fonts/Coco-Gothic-Heavy-trial.ttf");
+}
+
+@font-face {
+    font-family: "coco fat";
+    src: url("./fonts/Coco-Gothic-Fat-trial.ttf");
+}
+
+
 *,
 *::before,
 *::after {
@@ -13,64 +44,86 @@
 
 .container{
     width: 100%;
+    min-width: 400px;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     padding-top:27px;
-    
+    min-width: 400px;
 }
 
 .logo{
     margin-left: 39px;
 }
 
-.listNav li {
+.listElement {
     display: inline-block;
+    padding: 0 10px;
+    font-family: 'coco regular';
+}
+
+.listElementActive {
+    color: #ec5242;
 }
 
 .slogan {
-    height: 80px;
+    min-height: 80px;
     display: flex;
     align-items: flex-end;
     padding-left: 28px;
+    font-size: 25px;
+    color: #ec5242;
+    font-family: 'coco light';
 }
 
 .title {
-    height: 145px;
+    min-height: 145px;
     padding-left: 28px;
     font-size: 43px;
+    font-family: 'coco fat';
+    font-weight: 900;
+    color: #ec5242;
 }
 
 .subtitle {
-    height: 166px;
+    min-height: 166px;
     padding-top: 30px;
     padding-left: 39px;
     padding-right: 50px;
-    font-size: 20px;
+    font-size: 16px;
     text-align: justify;
     padding-bottom: 30px;
+    line-height: 30px;
+    font-family: 'Lato', sans-serif;
+    /* color: #D3D3D3; */
+    color: #272A31;
 }
 
 .date {
-    height: 52px;
+    min-height: 52px;
     padding-left: 28px;
     font-size: 35px;
     font-weight: bold;
     display: flex;
+    font-family: 'Lato';
+    font-weight: 900;
 }
 
 .copyRight {
     height: 150px;
     padding-left: 28px;
     padding-top: 23px;
-    
+    font-size: 20px;
+    font-family: 'Lato';
+    font-weight: 400;
+    color: rgb(82, 82, 82);
 }
 
 .mainProgram {
-    height: 965px;
-    background-color: gray;
+    min-height: 965px;
+    background-color: #272A31;
 }
 
 .titleMainProgram {
@@ -78,14 +131,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 25px;
+    color: white;
+    font-family: 'Lato';
 }
 
 .itemMainProgram {
     display: flex;
-    height: 115px;
+    min-height: 115px;
     margin-bottom: 14px;
-    background-color: lightslategray;
+    background-color: rgba(231, 231, 231, 0.2)
 }
 
 .logoMainProgram {
@@ -98,6 +153,16 @@
     font-size: 20px;
     display: flex;
     align-items:  center;
+    color: #ec5242;
+    font-family: 'Lato';
+    font-weight: 900;
+}
+
+.descriptionProgram{
+    color: white;
+    padding: 20px 0;
+    font-family: 'Lato';
+    font-weight: 400;
 }
 
 .btnJoin{
@@ -105,11 +170,104 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px ;
 }
 
 .btnJoinCC {
     height: 99px;
     width: 405px;
     font-size: 20px;
-    background-color: orange;
+    background-color: #ec5242;
+    color: white;
+    font-family: 'Lato';
+    font-weight: 400
+}
+
+.features {
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Lato';
+}
+
+.speakers {
+    display: flex;
+}
+
+.imgSpeakers {
+    min-height: 155px;
+    margin-left: 17px;
+    min-width: 180px;
+}
+
+.nameSpeakers {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Lato';
+}
+
+.curriculumSpeakers {
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Lato';
+    color: #ec5242;
+}
+
+.experienceSpeakers {
+    font-family: 'Lato';
+    font-size: 13px;
+    font-weight: 500;
+    color: gray;
+}
+
+.footerBanner {
+    min-height: 275px;
+    background-color: #2e2e2e;
+}
+
+.partnerFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 15px 0;
+    color: white;
+    font-family: 'Lato';
+    font-weight: 400;
+}
+
+.listPartnerFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 15px 0;
+}
+
+.footer {
+    display: flex;
+    height: 130px;
+}
+
+.logoFooter {
+    min-width: 188px;
+    margin-left: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightsFooter {
+    display: flex;
+    flex-flow: column;
+    padding-left: 30px;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Lato';
+    color: gray;
+    font-size: 13px;
+    font-weight: 600;
 }
