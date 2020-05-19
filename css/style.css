@@ -44,7 +44,10 @@
 
 .container{
     width: 100%;
-    /* min-width: 400px; */
+}
+
+.social {
+    display: none;
 }
 
 .nav {
@@ -52,11 +55,9 @@
     justify-content: space-around;
     align-items: center;
     padding:10px;
-    /* min-width: 400px; */
 }
 
-.logo{
-    /* margin-left: 39px; */
+.logo {
     width: 179px;
     height: 40px;
     background-image: url(/img/logo-small.png);
@@ -65,12 +66,10 @@
 
 .listNav {
     text-align: right;
-    /* display: flex; */
 }
 
 .listElement {
     display: inline-block;
-    /* text-align: right; */
     padding: 0 3vw;
     font-family: 'coco bold';
     font-size: 15px;
@@ -79,7 +78,7 @@
 
 .listElementActive {
     color: #ec5242;
-    /* display: none; */
+    display: none;
 }
 
 .banner {
@@ -102,17 +101,13 @@
     font-size: 43px;
     font-family: 'coco fat';
     font-weight: 900;
-    /* color: #ec5242; */
     color: rgba(227, 58, 52, 0.1);
     background-image: url(https://media.giphy.com/media/l0K4ekwdCUu9KdeF2/giphy.gif);
     background-position: 50% 65%;
     -webkit-background-clip: text;
-    /* font-size: 60px; */
-    /* padding-left: 174px; */
 }
 
 .subtitle {
-    /* min-height: 166px; */
     margin: 20px 0px;
     padding-top: 30px;
     padding-left: 39px;
@@ -122,7 +117,6 @@
     padding-bottom: 30px;
     line-height: 30px;
     font-family: 'Lato', sans-serif;
-    /* color: #D3D3D3; */
     color: #272A31;
 }
 
@@ -152,25 +146,27 @@
 
 
 .titleMainProgram {
-    height: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 25px;
-    /* color: white; */
     font-family: 'Lato';
-
-        color: rgba(255, 255, 255, 0.9);
-        background-position: 100% 100%;
-        background-image: url(/img/background-small.png);
-
+    color: rgba(255, 255, 255, 0.9);
+    background-position: 100% 100%;
+    background-image: url(/img/background-small.png);
 }
 
+.underline-orange {
+    border-bottom: 2px solid currentColor;
+    border-bottom-color: #ec5242;
+    margin: 30px;
+}
+  
 .mainProgram {
     background-color: #272A31;
     color: rgba(255, 255, 255, 0.9);
-    background-image: url(/img/background-small.png);    
-    /* border: 1px solid rosybrown; */
+    background-image: url(/img/background-small.png);  
+    border: 1px solid transparent;  
 }
 
 
@@ -184,69 +180,63 @@
 }
 
 .logoMainProgram {
-    /* padding-left: 39px; */
-    /* padding-left: 20px; */
-    /* padding-right: 20px; */
-    padding: 15px;
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
-    
+    padding: 15px;    
 }
 
 .titleProgram {
-    /* min-width: 125px; */
     font-size: 20px;
     display: flex;
     align-items:  center;
     color: #ec5242;
     font-family: 'Lato';
     font-weight: 900;
-    min-width: 100px;
+    min-width: 70px;
 }
 
-.descriptionProgram{
+.descriptionProgram {
     color: white;
-    padding: 20px 0;
+    padding: 20px 5px;
     font-family: 'Lato';
     font-weight: 400;
 }
 
-.btnJoin{
-    height: 100px;
+.btnJoin {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url(/img/background-small.png);  
 }
 
 .btnJoinCC {
-    height: 99px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     width: 405px;
     font-size: 20px;
     background-color: #ec5242;
     color: white;
     font-family: 'Lato';
-    font-weight: 400
+    font-weight: 400;
+    border: none;
 }
 
 .features {
-    height: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 25px;
     font-family: 'Lato';
+    margin-bottom: 30px;    
 }
 
 .speakers {
     display: flex;
+    margin-bottom: 10px;
 }
 
 .imgSpeakers {
-    /* min-height: 155px; */
     margin-left: 17px;
-    /* min-width: 180px; */
 }
 
 .imgSpeakers img {
@@ -254,7 +244,7 @@
 }
 
 .infoSpeakers {
-    padding-left: 10px;
+    padding: 0 10px 0 10px;
 }
 
 .nameSpeakers {
@@ -279,7 +269,6 @@
 }
 
 .footerBanner {
-    /* min-height: 275px; */
     background-color: #333;
 }
 
@@ -313,14 +302,9 @@
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    /* height: 130px; */
-    /* margin: 20px auto; */
 }
 
 .logoFooter {
-    /* min-width: 188px; */
-    /* margin-left: 62px; */
-    /* margin: 0 auto; */
     width: 160px;
     height: 40px;
     background-image: url(/img/logo-small.png);
@@ -331,14 +315,12 @@
 .rightsFooter {
     display: flex;
     flex-flow: column;
-    /* padding-left: 25px; */
     align-items: flex-start;
     justify-content: center;
     font-family: 'Lato';
     color: gray;
     font-size: 13px;
     font-weight: 600;
-    /* margin: 0 auto; */
 }
 
 /*  ==================================================
@@ -348,15 +330,46 @@
     @media (min-width: 768px) {
 
         .social{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            /* border: 1px solid red; */
+            /* width: 600px; */
             width: 100%;
             height: 30px;
             background-color:#3e3e3e ;
+            color: white;
+            font-family: "coco light";
+            font-size: 13px;
+        }
+
+        .social i{
+            padding: 10px;
+        }
+        
+        .social >span {
+            padding: 10px;
+            padding-right: 20px;
+            /* color: #ec5242; */
+        }
+
+        .activeSpan {
+            color: #ec5242;
+            font-family: "coco bold";
+        }
+
+        .listElement {
+            font-size: 20px;
+        }
+
+        .listElementActive {
+            display: inline;
         }
 
         .logo{
             margin-left: 39px;
-            /* width: 450px; */
-            /* height: 100px; */
+            width: 380px;
+            height: 80px;
             background-size: cover;
             background-image: url(/img/logo-big.png);
         
@@ -411,8 +424,7 @@
             display: flex;
             flex-flow: row nowrap;
             color: rgba(255, 255, 255, 0.9);
-            background-image: url(/img/background-small.png);    
-            /* border: 1px solid rosybrown;    */
+            background-image: url(/img/background-small.png);
             flex-wrap: wrap;     
         }
 
@@ -422,13 +434,10 @@
             background-color: rgba(255,255,255,0.1);
             padding: 10px 10px;
             margin: 10px auto;
-            border: 1px solid green;
             width: 300px;
         }
 
         .logoMainProgram {
-
-            border: 1px solid blueviolet;
             margin: 10px auto;
             width: 100px;
             height: 100px;
@@ -436,8 +445,8 @@
         }
 
         .titleProgram {
-            border: 1px solid greenyellow;
             margin: 0 auto;
+            justify-content: center;
         }
 
         .descriptionProgram{
@@ -447,7 +456,6 @@
             font-weight: 300;
             font-size: 13px;
             text-align: center;
-            border: 1px solid red;
         }
 
         .btnJoin {
@@ -459,31 +467,20 @@
         }
 
         .speakersContainer {
-            border: 1px solid black;
             display: flex;
             flex-flow: row;
             flex-direction: row;
-            /* box-sizing: border-box; */
             flex-wrap: wrap;
-            justify-content: center;
-            
+            justify-content: center;            
         }
 
         .speakers {
-            border: 1px solid red;
             margin: 10px;
             width: 415px;
-            /* display: flex; */
-            /* flex-direction: row; */
         }
 
-        .imgSpeakers{
-            border: 1px solid black;
-            /* wi   dth: 400px; */
-            /* width: 165px; */
-        }
+        
         .infoSpeakers {
-            border: 1px solid blue;
             width: 250px;
         }
 
@@ -491,7 +488,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 1px solid white;
         }
 
         .listPartnerFooter img {
