@@ -39,33 +39,51 @@
 }
 
 * {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .container{
     width: 100%;
-    min-width: 400px;
+    /* min-width: 400px; */
 }
 
 .nav {
     display: flex;
-    justify-content: space-between;
-    padding-top:27px;
-    min-width: 400px;
+    justify-content: space-around;
+    align-items: center;
+    padding:10px;
+    /* min-width: 400px; */
 }
 
 .logo{
-    margin-left: 39px;
+    /* margin-left: 39px; */
+    width: 179px;
+    height: 40px;
+    background-image: url(/img/logo-small.png);
+
+}
+
+.listNav {
+    text-align: right;
+    /* display: flex; */
 }
 
 .listElement {
     display: inline-block;
-    padding: 0 10px;
-    font-family: 'coco regular';
+    /* text-align: right; */
+    padding: 0 3vw;
+    font-family: 'coco bold';
+    font-size: 15px;
+    color: #333;
 }
 
 .listElementActive {
     color: #ec5242;
+    /* display: none; */
+}
+
+.banner {
+    background-image: url(/img/background-large.png);
 }
 
 .slogan {
@@ -84,11 +102,18 @@
     font-size: 43px;
     font-family: 'coco fat';
     font-weight: 900;
-    color: #ec5242;
+    /* color: #ec5242; */
+    color: rgba(227, 58, 52, 0.1);
+    background-image: url(https://media.giphy.com/media/l0K4ekwdCUu9KdeF2/giphy.gif);
+    background-position: 50% 65%;
+    -webkit-background-clip: text;
+    /* font-size: 60px; */
+    /* padding-left: 174px; */
 }
 
 .subtitle {
-    min-height: 166px;
+    /* min-height: 166px; */
+    margin: 20px 0px;
     padding-top: 30px;
     padding-left: 39px;
     padding-right: 50px;
@@ -109,6 +134,10 @@
     display: flex;
     font-family: 'Lato';
     font-weight: 900;
+    color: rgba(0, 0, 0,0.6);
+    background-image: url(https://media.giphy.com/media/3ohs4ucXR6NYRxmpTa/giphy.gif);
+    background-position: 50% 65%;
+    -webkit-background-clip: text;
 }
 
 .copyRight {
@@ -121,10 +150,6 @@
     color: rgb(82, 82, 82);
 }
 
-.mainProgram {
-    min-height: 965px;
-    background-color: #272A31;
-}
 
 .titleMainProgram {
     height: 130px;
@@ -132,30 +157,52 @@
     align-items: center;
     justify-content: center;
     font-size: 25px;
-    color: white;
+    /* color: white; */
     font-family: 'Lato';
+
+        color: rgba(255, 255, 255, 0.9);
+        background-position: 100% 100%;
+        background-image: url(/img/background-small.png);
+
 }
+
+.mainProgram {
+    background-color: #272A31;
+    color: rgba(255, 255, 255, 0.9);
+    background-image: url(/img/background-small.png);    
+    /* border: 1px solid rosybrown; */
+}
+
+
 
 .itemMainProgram {
     display: flex;
-    min-height: 115px;
-    margin-bottom: 14px;
+    margin-left: 20px;
+    margin-bottom: 14px;    
+    margin-right: 20px;
     background-color: rgba(231, 231, 231, 0.2)
 }
 
 .logoMainProgram {
-    padding-left: 39px;
+    /* padding-left: 39px; */
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    padding: 15px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     
 }
 
 .titleProgram {
-    min-width: 125px;
+    /* min-width: 125px; */
     font-size: 20px;
     display: flex;
     align-items:  center;
     color: #ec5242;
     font-family: 'Lato';
     font-weight: 900;
+    min-width: 100px;
 }
 
 .descriptionProgram{
@@ -197,9 +244,17 @@
 }
 
 .imgSpeakers {
-    min-height: 155px;
+    /* min-height: 155px; */
     margin-left: 17px;
-    min-width: 180px;
+    /* min-width: 180px; */
+}
+
+.imgSpeakers img {
+    max-width: 30vw;
+}
+
+.infoSpeakers {
+    padding-left: 10px;
 }
 
 .nameSpeakers {
@@ -224,8 +279,8 @@
 }
 
 .footerBanner {
-    min-height: 275px;
-    background-color: #2e2e2e;
+    /* min-height: 275px; */
+    background-color: #333;
 }
 
 .partnerFooter {
@@ -245,29 +300,204 @@
     align-items: center;
     font-size: 25px;
     padding: 15px 0;
+    flex-wrap: wrap;
+}
+
+.listPartnerFooter img {
+    margin: 0 auto;
 }
 
 .footer {
     display: flex;
-    height: 130px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* height: 130px; */
+    /* margin: 20px auto; */
 }
 
 .logoFooter {
-    min-width: 188px;
-    margin-left: 62px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* min-width: 188px; */
+    /* margin-left: 62px; */
+    /* margin: 0 auto; */
+    width: 160px;
+    height: 40px;
+    background-image: url(/img/logo-small.png);
+    background-size: cover;
+    background-position: 50% 50%;
 }
 
 .rightsFooter {
     display: flex;
     flex-flow: column;
-    padding-left: 30px;
+    /* padding-left: 25px; */
     align-items: flex-start;
     justify-content: center;
     font-family: 'Lato';
     color: gray;
     font-size: 13px;
     font-weight: 600;
+    /* margin: 0 auto; */
 }
+
+/*  ==================================================
+                      Tablet
+    ================================================= */
+
+    @media (min-width: 768px) {
+
+        .social{
+            width: 100%;
+            height: 30px;
+            background-color:#3e3e3e ;
+        }
+
+        .logo{
+            margin-left: 39px;
+            /* width: 450px; */
+            /* height: 100px; */
+            background-size: cover;
+            background-image: url(/img/logo-big.png);
+        
+        }
+        
+        .banner {
+            background-image: url(/img/background-large.png);
+        }
+
+        .bannerInside {
+            background-color: rgba(231, 231, 231, 0.8);
+        }
+
+        .slogan {
+            font-size: 40px;
+            padding-left: 174px;
+        }
+
+        .title {
+            color: rgba(0, 0, 0, 0.4);
+            background-image: url(https://media.giphy.com/media/kcUYBqq6ntGAZcfmiG/giphy.gif);
+            background-position: 50% 65%;
+            -webkit-background-clip: text;
+            font-size: 60px;
+            padding-left: 174px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            padding: 20px;
+            margin-left: 174px;
+            width: 580px;
+            border: 4px solid white;
+            line-height: 20px;
+        }
+
+        .date {
+            padding-left: 174px;
+        }
+
+        .copyRight {
+            padding-left: 174px;
+        }
+
+        .titleMainProgram {
+            color: rgba(255, 255, 255, 0.9);
+            background-position: 100% 100%;
+            background-image: url(/img/background-small.png);
+        }
+
+        .mainProgram {
+            display: flex;
+            flex-flow: row nowrap;
+            color: rgba(255, 255, 255, 0.9);
+            background-image: url(/img/background-small.png);    
+            /* border: 1px solid rosybrown;    */
+            flex-wrap: wrap;     
+        }
+
+        .itemMainProgram {
+            display: flex;
+            flex-flow: column;
+            background-color: rgba(255,255,255,0.1);
+            padding: 10px 10px;
+            margin: 10px auto;
+            border: 1px solid green;
+            width: 300px;
+        }
+
+        .logoMainProgram {
+
+            border: 1px solid blueviolet;
+            margin: 10px auto;
+            width: 100px;
+            height: 100px;
+            
+        }
+
+        .titleProgram {
+            border: 1px solid greenyellow;
+            margin: 0 auto;
+        }
+
+        .descriptionProgram{
+            color: white;
+            padding: 20px 5px;
+            font-family: 'Lato';
+            font-weight: 300;
+            font-size: 13px;
+            text-align: center;
+            border: 1px solid red;
+        }
+
+        .btnJoin {
+            display: none;
+        }
+
+        .features {
+            font-size: 35px;
+        }
+
+        .speakersContainer {
+            border: 1px solid black;
+            display: flex;
+            flex-flow: row;
+            flex-direction: row;
+            /* box-sizing: border-box; */
+            flex-wrap: wrap;
+            justify-content: center;
+            
+        }
+
+        .speakers {
+            border: 1px solid red;
+            margin: 10px;
+            width: 415px;
+            /* display: flex; */
+            /* flex-direction: row; */
+        }
+
+        .imgSpeakers{
+            border: 1px solid black;
+            /* wi   dth: 400px; */
+            /* width: 165px; */
+        }
+        .infoSpeakers {
+            border: 1px solid blue;
+            width: 250px;
+        }
+
+        .listPartnerFooter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+        }
+
+        .listPartnerFooter img {
+            padding: 0 20px;
+        }
+
+
+
+    }
