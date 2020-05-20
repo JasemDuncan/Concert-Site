@@ -38,8 +38,6 @@
   box-sizing: border-box;
 }
 
-
-
 .container{
     width: 100%;
 }
@@ -67,7 +65,6 @@
     width: 179px;
     height: 40px;
     background-image: url(/img/logo-small.png);
-
 }
 
 .listNav {
@@ -98,7 +95,6 @@
     display: none;
     border-bottom: 2px solid currentColor;
     border-bottom-color: #ec5242;
-    /* margin: 30px; */
 }
 
 .listElementActive a {
@@ -111,11 +107,9 @@
 
 .bannerTicket {
     background-image: url(/img/background-large-ticket.png);
-
 }
 
 .slogan {
-    /* min-height: 80px; */
     display: flex;
     align-items: flex-end;
     padding-left: 28px;
@@ -126,10 +120,7 @@
 }
 
 .slogan:hover {
-    /* font-size: 30px; */
-    /* display: none; */
     color: #333;
-    /* font-family: 'coco ultralight'; */
 }
 
 .title {
@@ -145,7 +136,6 @@
 }
 
 .title:hover {
-   /* color: #ec5242; */
    background-image: url(https://media.giphy.com/media/3oKGzdryxKlE3gnly8/giphy.gif);
    background-position: 50% 50%;
    -webkit-background-clip: text;
@@ -164,8 +154,6 @@
     color: #272A31;
 }
 
-
-
 .date {
     min-height: 52px;
     padding-left: 28px;
@@ -180,7 +168,7 @@
     -webkit-background-clip: text;
 }
 
-.date:hover{
+.date:hover {
     color: #ec5242;
 }
 
@@ -193,7 +181,6 @@
     font-weight: 400;
     color: rgb(82, 82, 82);
 }
-
 
 .titleMainProgram {
     display: flex;
@@ -210,9 +197,11 @@
     text-decoration: none;
     color: white;
 }
+
 .titleMainProgram a :hover {
     color: #ec5242;
 }
+
 .underline-orange {
     border-bottom: 2px solid currentColor;
     border-bottom-color: #ec5242;
@@ -221,7 +210,6 @@
 
 .underline-orange a :hover{
     color: #ec5242;
-    /* text-decoration: ; */
 }
   
 .mainProgram {
@@ -236,11 +224,8 @@
     color: rgba(255, 255, 255, 0.9);
     background-image: url(/img/background-small.png);  
     border: 1px solid transparent; 
-    /* margin-bottom: 100px; */
-    /* border: 1px solid red;  */
     display: flex;
     justify-content: center;
-    /* align-items: center; */
 }
 
 .itemMainProgram {
@@ -262,8 +247,7 @@
     margin-left: 20px;
     margin-bottom: 14px;    
     margin-right: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    
+    background-color: rgba(255, 255, 255, 0.1);    
 }
 
 .logoMainProgram {
@@ -308,7 +292,7 @@
     border: none;
 }
 
-.btnJoinCC:hover{
+.btnJoinCC:hover {
     font-size: 26px;
     padding-top: 26px;
     padding-bottom: 26px;
@@ -373,7 +357,6 @@
 
 .imgSpeakers:hover{
     background-color: #ec5242;
-
 }
 
 .infoSpeakers {
@@ -402,7 +385,7 @@
     color: gray;
 }
 
-.nameSpeakers:hover{
+.nameSpeakers:hover {
     color: #ec5242;
 }
 
@@ -426,7 +409,7 @@
     color: white;
 }
 
-.partnerFooter a:hover{
+.partnerFooter a:hover {
     color: #ec5242;
 }
 .listPartnerFooter {
@@ -469,7 +452,6 @@
     font-weight: 600;
 }
 
-/* Tickets */
 .tickets {
     font-family: 'Lato';
     display: grid;
@@ -482,21 +464,15 @@
     color: rgba(0, 0, 0, 0.1);
     background-image: url(https://media.giphy.com/media/26uf4JMeuLpt0gpwY/giphy.gif);
     background-position: 200% 50%;
-    -webkit-background-clip: text ;
+    -webkit-background-clip: text;
 }
-
-
 
 .item input {
     margin: 0 0 0 5px;
 }
 
 .poop {
-    /* justify-content: center; */
-    /* align-items: center; */
     text-align: center;
-    
-    /* background: #ec5242; */
     background-image: url(/img/background-small.png);
     grid-column: span 2;
     grid-row: 1 / -1;
@@ -504,220 +480,209 @@
 
 /*  ==================================================
                       >768px
-    ================================================= */
+================================================= */
 
-    @media (min-width: 768px) {
+@media (min-width: 768px) {
 
-        .social{
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            /* border: 1px solid red; */
-            /* width: 600px; */
-            width: 100%;
-            height: 30px;
-            background-color:#3e3e3e ;
-            color: white;
-            font-family: "coco light";
-            font-size: 13px;
-        }
-
-        .social a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .social i{
-            padding: 10px;
-        }
-
-        .facebook {
-            font-size: 24px;
-        }
-
-        .twitch {
-            font-size: 24px;
-        }
-        .social >span {
-            padding: 10px;
-            padding-right: 20px;
-            /* color: #ec5242; */
-        }
-
-        .activeSpan {
-            color: #ec5242;
-            font-family: "coco bold";
-        }
-
-        .listElement {
-            font-size: 20px;
-        }
-
-        .listElementActive {
-            display: inline;
-        }
-
-        .logo{
-            margin-left: 39px;
-            width: 380px;
-            height: 80px;
-            background-size: cover;
-            background-image: url(/img/logo-big.png);
-        
-        }
-        
-        .banner {
-            background-image: url(/img/background-large.png);
-        }
-
-        .bannerInside {
-            background-color: rgba(231, 231, 231, 0.8);
-        }
-
-        .slogan {
-            font-size: 40px;
-            padding-left: 174px;
-        }
-
-        .title {
-            color: rgba(0, 0, 0, 0.4);
-            background-image: url(https://media.giphy.com/media/kcUYBqq6ntGAZcfmiG/giphy.gif);
-            background-position: 50% 65%;
-            -webkit-background-clip: text;
-            font-size: 60px;
-            padding-left: 174px;
-        }
-
-        .subtitle {
-            font-size: 14px;
-            padding: 20px;
-            margin-left: 174px;
-            width: 580px;
-            border: 4px solid white;
-            line-height: 20px;
-            margin: 0 auto;
-        }
-
-        .date {
-            padding-left: 174px;
-        }
-
-        .copyRight {
-            padding-left: 174px;
-        }
-
-        .titleMainProgram {
-            color: rgba(255, 255, 255, 0.9);
-            background-position: 100% 100%;
-            background-image: url(/img/background-small.png);
-        }
-
-        .mainProgram {
-            display: flex;
-            flex-flow: row nowrap;
-            color: rgba(255, 255, 255, 0.9);
-            background-image: url(/img/background-small.png);
-            flex-wrap: wrap;     
-        }
-
-        .mainProgramTicket {
-            /* display: flex; */
-            /* flex-flow: row nowrap; */
-            color: rgba(255, 255, 255, 0.9);
-            background-image: url(/img/background-small.png);
-            flex-wrap: wrap;     
-        }
-
-        .tickets {
-            display: grid;
-            grid-gap: 20px;
-            grid-template-columns: repeat(15, 1fr);
-            grid-template-rows: repeat(15, 1fr);
-            /* border: 1px solid red; */
-            border: 2px solid #ec5242;
-            padding: 10px ;
-            margin: 20px auto;
-            color: rgba(0, 0, 0, 0.1);
-            background-image: url(https://media.giphy.com/media/26uf4JMeuLpt0gpwY/giphy.gif);
-            background-position: 200% 50%;
-            -webkit-background-clip: text ;
-        }
-
-        .itemMainProgram{
-            display: flex;
-            flex-flow: column;
-            background-color: rgba(255,255,255,0.1);
-            padding: 10px 10px;
-            margin: 10px auto;
-            width: 300px;
-        }
-        .itemMainProgramAbout{
-            display: flex;
-            flex-flow: column;
-            background-color: rgba(255,255,255,0.1);
-            padding: 10px 10px;
-            margin: 10px auto;
-            width: 300px;
-        }
-
-        .logoMainProgram {
-            margin: 10px auto;
-            width: 100px;
-            height: 100px;
-            
-        }
-
-        .titleProgram {
-            margin: 0 auto;
-            justify-content: center;
-        }
-
-        .descriptionProgram{
-            color: white;
-            padding: 20px 5px;
-            font-family: 'Lato';
-            font-weight: 400;
-            font-size: 17px;
-            text-align: center;
-        }
-
-        .btnJoin {
-            display: none;
-        }
-
-        .features {
-            font-size: 35px;
-        }
-
-        
-        .speakersContainer {
-            display: flex;
-            flex-flow: row;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;            
-        }
-
-        .speakers {
-            margin: 10px;
-            width: 415px;
-        }
-
-        
-        .infoSpeakers {
-            width: 250px;
-        }
-
-        .listPartnerFooter{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .listPartnerFooter img {
-            padding: 0 20px;
-        }
-
-
-
+    .social{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        height: 30px;
+        background-color:#3e3e3e ;
+        color: white;
+        font-family: "coco light";
+        font-size: 13px;
     }
+
+    .social a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .social i {
+        padding: 10px;
+    }
+
+    .facebook {
+        font-size: 24px;
+    }
+
+    .twitch {
+        font-size: 24px;
+    }
+    .social > span {
+        padding: 10px;
+        padding-right: 20px;            
+    }
+
+    .activeSpan {
+        color: #ec5242;
+        font-family: "coco bold";
+    }
+
+    .listElement {
+        font-size: 20px;
+    }
+
+    .listElementActive {
+        display: inline;
+    }
+
+    .logo{
+        margin-left: 39px;
+        width: 380px;
+        height: 80px;
+        background-size: cover;
+        background-image: url(/img/logo-big.png);        
+    }
+    
+    .banner {
+        background-image: url(/img/background-large.png);
+    }
+
+    .bannerInside {
+        background-color: rgba(231, 231, 231, 0.8);
+    }
+
+    .slogan {
+        font-size: 40px;
+        padding-left: 174px;
+    }
+
+    .title {
+        color: rgba(0, 0, 0, 0.4);
+        background-image: url(https://media.giphy.com/media/kcUYBqq6ntGAZcfmiG/giphy.gif);
+        background-position: 50% 65%;
+        -webkit-background-clip: text;
+        font-size: 60px;
+        padding-left: 174px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        padding: 20px;
+        margin-left: 174px;
+        width: 580px;
+        border: 4px solid white;
+        line-height: 20px;
+        margin: 0 auto;
+    }
+
+    .date {
+        padding-left: 174px;
+    }
+
+    .copyRight {
+        padding-left: 174px;
+    }
+
+    .titleMainProgram {
+        color: rgba(255, 255, 255, 0.9);
+        background-position: 100% 100%;
+        background-image: url(/img/background-small.png);
+    }
+
+    .mainProgram {
+        display: flex;
+        flex-flow: row nowrap;
+        color: rgba(255, 255, 255, 0.9);
+        background-image: url(/img/background-small.png);
+        flex-wrap: wrap;     
+    }
+
+    .mainProgramTicket {
+        color: rgba(255, 255, 255, 0.9);
+        background-image: url(/img/background-small.png);
+        flex-wrap: wrap;     
+    }
+
+    .tickets {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(15, 1fr);
+        grid-template-rows: repeat(15, 1fr);
+        border: 2px solid #ec5242;
+        padding: 10px ;
+        margin: 20px auto;
+        color: rgba(0, 0, 0, 0.1);
+        background-image: url(https://media.giphy.com/media/26uf4JMeuLpt0gpwY/giphy.gif);
+        background-position: 200% 50%;
+        -webkit-background-clip: text ;
+    }
+
+    .itemMainProgram {
+        display: flex;
+        flex-flow: column;
+        background-color: rgba(255,255,255,0.1);
+        padding: 10px 10px;
+        margin: 10px auto;
+        width: 300px;
+    }
+
+    .itemMainProgramAbout {
+        display: flex;
+        flex-flow: column;
+        background-color: rgba(255,255,255,0.1);
+        padding: 10px 10px;
+        margin: 10px auto;
+        width: 300px;
+    }
+
+    .logoMainProgram {
+        margin: 10px auto;
+        width: 100px;
+        height: 100px;            
+    }
+
+    .titleProgram {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .descriptionProgram {
+        color: white;
+        padding: 20px 5px;
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .btnJoin {
+        display: none;
+    }
+
+    .features {
+        font-size: 35px;
+    }
+    
+    .speakersContainer {
+        display: flex;
+        flex-flow: row;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;            
+    }
+
+    .speakers {
+        margin: 10px;
+        width: 415px;
+    }
+
+    
+    .infoSpeakers {
+        width: 250px;
+    }
+
+    .listPartnerFooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .listPartnerFooter img {
+        padding: 0 20px;
+    }
+}
