@@ -63,7 +63,7 @@
 .logo {
   width: 179px;
   height: 40px;
-  background-image: url(/img/logo-small.png);
+  background-image: url('/img/logo-small.png');
 }
 
 .listNav {
