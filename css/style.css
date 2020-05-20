@@ -63,7 +63,7 @@
 .logo {
   width: 179px;
   height: 40px;
-  background-image: url('/img/logo-small.png');
+  background-image: url('../img/logo-small.png');
 }
 
 .listNav {
@@ -203,7 +203,7 @@
   font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
   color: rgba(255, 255, 255, 0.9);
   background-position: 100% 100%;
-  background-image: url(/img/background-small.png);
+  background-image: url('../img/background-small.png');
 }
 
 .titleMainProgram a :hover {
@@ -223,14 +223,14 @@
 .mainProgram {
   background-color: #272a31;
   color: rgba(255, 255, 255, 0.9);
-  background-image: url(/img/background-small.png);
+  background-image: url('../img/background-small.png');
   border: 1px solid transparent;
 }
 
 .mainProgramTicket {
   background-color: #272a31;
   color: rgba(255, 255, 255, 0.9);
-  background-image: url(/img/background-small.png);
+  background-image: url('../img/background-small.png');
   border: 1px solid transparent;
   display: flex;
   justify-content: center;
@@ -285,7 +285,7 @@
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-image: url(/img/background-small.png);
+  background-image: url('../img/background-small.png');
 }
 
 .btnJoinCC {
@@ -312,7 +312,7 @@
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  background-image: url(/img/background-small.png);
+  background-image: url('../img/background-small.png');
 }
 
 .btnJoinCCTicket {
@@ -437,7 +437,7 @@
 .logoFooter {
   width: 160px;
   height: 40px;
-  background-image: url(/img/logo-small.png);
+  background-image: url('../img/logo-small.png');
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -470,13 +470,6 @@
 
 .item input {
   margin: 0 0 0 5px;
-}
-
-.poop {
-  text-align: center;
-  background-image: url(/img/background-small.png);
-  grid-column: span 2;
-  grid-row: 1 / -1;
 }
 
 /*  ==================================================
@@ -536,11 +529,11 @@
     width: 380px;
     height: 80px;
     background-size: cover;
-    background-image: url(/img/logo-big.png);
+    background-image: url('../img/logo-big.png');
   }
 
   .banner {
-    background-image: url(/img/background-large.png);
+    background-image: url('../img/background-large.png');
   }
 
   .bannerInside {
@@ -581,20 +574,20 @@
   .titleMainProgram {
     color: rgba(255, 255, 255, 0.9);
     background-position: 100% 100%;
-    background-image: url(/img/background-small.png);
+    background-image: url('../img/background-small.png');
   }
 
   .mainProgram {
     display: flex;
     flex-flow: row nowrap;
     color: rgba(255, 255, 255, 0.9);
-    background-image: url(/img/background-small.png);
+    background-image: url('../img/background-small.png');
     flex-wrap: wrap;
   }
 
   .mainProgramTicket {
     color: rgba(255, 255, 255, 0.9);
-    background-image: url(/img/background-small.png);
+    background-image: url('../img/background-small.png');
     flex-wrap: wrap;
   }
 
