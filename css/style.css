@@ -38,9 +38,7 @@
   box-sizing: border-box;
 }
 
-* {
-    /* border: 1px solid red; */
-}
+
 
 .container{
     width: 100%;
@@ -48,6 +46,14 @@
 
 .social {
     display: none;
+}
+
+.social a :hover {
+    color: #ec5242;
+}
+
+.social span:hover {
+    color: #ec5242;
 }
 
 .nav {
@@ -76,23 +82,54 @@
     color: #333;
 }
 
+.listElement a:hover{
+    color: #ec5242;
+}
+
+.listElement a {
+    text-decoration: none;    
+    font-family: 'coco bold';
+    font-size:20px;
+    color: #333;
+}
+
 .listElementActive {
     color: #ec5242;
     display: none;
+    border-bottom: 2px solid currentColor;
+    border-bottom-color: #ec5242;
+    /* margin: 30px; */
+}
+
+.listElementActive a {
+    color: #ec5242;
 }
 
 .banner {
     background-image: url(/img/background-large.png);
 }
 
+.bannerTicket {
+    background-image: url(/img/background-large-ticket.png);
+
+}
+
 .slogan {
-    min-height: 80px;
+    /* min-height: 80px; */
     display: flex;
     align-items: flex-end;
     padding-left: 28px;
+    padding-top: 20px;
     font-size: 25px;
     color: #ec5242;
     font-family: 'coco light';
+}
+
+.slogan:hover {
+    /* font-size: 30px; */
+    /* display: none; */
+    color: #333;
+    /* font-family: 'coco ultralight'; */
 }
 
 .title {
@@ -105,6 +142,13 @@
     background-image: url(https://media.giphy.com/media/l0K4ekwdCUu9KdeF2/giphy.gif);
     background-position: 50% 65%;
     -webkit-background-clip: text;
+}
+
+.title:hover {
+   /* color: #ec5242; */
+   background-image: url(https://media.giphy.com/media/3oKGzdryxKlE3gnly8/giphy.gif);
+   background-position: 50% 50%;
+   -webkit-background-clip: text;
 }
 
 .subtitle {
@@ -120,6 +164,8 @@
     color: #272A31;
 }
 
+
+
 .date {
     min-height: 52px;
     padding-left: 28px;
@@ -132,6 +178,10 @@
     background-image: url(https://media.giphy.com/media/3ohs4ucXR6NYRxmpTa/giphy.gif);
     background-position: 50% 65%;
     -webkit-background-clip: text;
+}
+
+.date:hover{
+    color: #ec5242;
 }
 
 .copyRight {
@@ -156,10 +206,22 @@
     background-image: url(/img/background-small.png);
 }
 
+.titleMainProgram a {
+    text-decoration: none;
+    color: white;
+}
+.titleMainProgram a :hover {
+    color: #ec5242;
+}
 .underline-orange {
     border-bottom: 2px solid currentColor;
     border-bottom-color: #ec5242;
     margin: 30px;
+}
+
+.underline-orange a :hover{
+    color: #ec5242;
+    /* text-decoration: ; */
 }
   
 .mainProgram {
@@ -169,14 +231,39 @@
     border: 1px solid transparent;  
 }
 
-
+.mainProgramTicket {
+    background-color: #272A31;
+    color: rgba(255, 255, 255, 0.9);
+    background-image: url(/img/background-small.png);  
+    border: 1px solid transparent; 
+    /* margin-bottom: 100px; */
+    /* border: 1px solid red;  */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
 
 .itemMainProgram {
     display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    margin-bottom: 15px;    
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.1);    
+}
+
+.descriptionProgram:hover {
+    color: #ec5242;
+}
+
+.itemMainProgramAbout {
+    display: flex;
+    justify-content: center;
     margin-left: 20px;
     margin-bottom: 14px;    
     margin-right: 20px;
-    background-color: rgba(231, 231, 231, 0.2)
+    background-color: rgba(255, 255, 255, 0.1);
+    
 }
 
 .logoMainProgram {
@@ -221,6 +308,39 @@
     border: none;
 }
 
+.btnJoinCC:hover{
+    font-size: 26px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
+.btnJoinTicket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-image: url(/img/background-small.png);  
+}
+
+.btnJoinCCTicket {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 405px;
+    font-size: 20px;
+    background-color: #ec5242;
+    color: white;
+    font-family: 'Lato';
+    font-weight: 400;
+    border: none;
+}
+
+.btnJoinCCTicket:hover {
+    font-size: 26px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+
 .features {
     display: flex;
     justify-content: center;
@@ -228,6 +348,14 @@
     font-size: 25px;
     font-family: 'Lato';
     margin-bottom: 30px;    
+    color: #333;
+}
+.features a {
+    text-decoration: none;
+    color: #333;
+}
+.features a:hover{
+    color: #ec5242;
 }
 
 .speakers {
@@ -243,6 +371,11 @@
     max-width: 30vw;
 }
 
+.imgSpeakers:hover{
+    background-color: #ec5242;
+
+}
+
 .infoSpeakers {
     padding: 0 10px 0 10px;
 }
@@ -251,6 +384,7 @@
     font-size: 20px;
     font-weight: bold;
     font-family: 'Lato';
+    color: #333;
 }
 
 .curriculumSpeakers {
@@ -268,6 +402,10 @@
     color: gray;
 }
 
+.nameSpeakers:hover{
+    color: #ec5242;
+}
+
 .footerBanner {
     background-color: #333;
 }
@@ -283,6 +421,14 @@
     font-weight: 400;
 }
 
+.partnerFooter a {
+    text-decoration: none;
+    color: white;
+}
+
+.partnerFooter a:hover{
+    color: #ec5242;
+}
 .listPartnerFooter {
     display: flex;
     justify-content: center;
@@ -323,8 +469,41 @@
     font-weight: 600;
 }
 
+/* Tickets */
+.tickets {
+    font-family: 'Lato';
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    border: 2px solid #ec5242;
+    padding: 10px 10px;
+    margin: 20px auto;
+    color: rgba(0, 0, 0, 0.1);
+    background-image: url(https://media.giphy.com/media/26uf4JMeuLpt0gpwY/giphy.gif);
+    background-position: 200% 50%;
+    -webkit-background-clip: text ;
+}
+
+
+
+.item input {
+    margin: 0 0 0 5px;
+}
+
+.poop {
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    
+    /* background: #ec5242; */
+    background-image: url(/img/background-small.png);
+    grid-column: span 2;
+    grid-row: 1 / -1;
+  }
+
 /*  ==================================================
-                      Tablet
+                      >768px
     ================================================= */
 
     @media (min-width: 768px) {
@@ -343,10 +522,22 @@
             font-size: 13px;
         }
 
+        .social a {
+            text-decoration: none;
+            color: white;
+        }
+
         .social i{
             padding: 10px;
         }
-        
+
+        .facebook {
+            font-size: 24px;
+        }
+
+        .twitch {
+            font-size: 24px;
+        }
         .social >span {
             padding: 10px;
             padding-right: 20px;
@@ -404,6 +595,7 @@
             width: 580px;
             border: 4px solid white;
             line-height: 20px;
+            margin: 0 auto;
         }
 
         .date {
@@ -428,7 +620,38 @@
             flex-wrap: wrap;     
         }
 
-        .itemMainProgram {
+        .mainProgramTicket {
+            /* display: flex; */
+            /* flex-flow: row nowrap; */
+            color: rgba(255, 255, 255, 0.9);
+            background-image: url(/img/background-small.png);
+            flex-wrap: wrap;     
+        }
+
+        .tickets {
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: repeat(15, 1fr);
+            grid-template-rows: repeat(15, 1fr);
+            /* border: 1px solid red; */
+            border: 2px solid #ec5242;
+            padding: 10px ;
+            margin: 20px auto;
+            color: rgba(0, 0, 0, 0.1);
+            background-image: url(https://media.giphy.com/media/26uf4JMeuLpt0gpwY/giphy.gif);
+            background-position: 200% 50%;
+            -webkit-background-clip: text ;
+        }
+
+        .itemMainProgram{
+            display: flex;
+            flex-flow: column;
+            background-color: rgba(255,255,255,0.1);
+            padding: 10px 10px;
+            margin: 10px auto;
+            width: 300px;
+        }
+        .itemMainProgramAbout{
             display: flex;
             flex-flow: column;
             background-color: rgba(255,255,255,0.1);
@@ -453,8 +676,8 @@
             color: white;
             padding: 20px 5px;
             font-family: 'Lato';
-            font-weight: 300;
-            font-size: 13px;
+            font-weight: 400;
+            font-size: 17px;
             text-align: center;
         }
 
@@ -466,6 +689,7 @@
             font-size: 35px;
         }
 
+        
         .speakersContainer {
             display: flex;
             flex-flow: row;

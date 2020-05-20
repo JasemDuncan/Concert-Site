@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
@@ -13,25 +12,22 @@
 <body>
     <div class="container">
         <div class="social"> 
-            <i class='fab fa-facebook-f' style='font-size:24px'></i>
-            <i class="fa fa-twitch" style="font-size:24px"></i>
-            <span class="activeSpan">English</span>
+            <a href="index.html"><i class='fab fa-facebook-f facebook'></i></a> 
+            <a href="index.html"><i class="fa fa-twitch twitch" ></i></a> 
+            <span class="activeSpan listElementActive">English</span>
             <span>MyPage</span>
             <span>Logout</span>
         </div>
         <div class="nav">            
             <div class="logo"> 
-                <!-- <img src="./img/logo-small.png"  alt=""> -->
             </div>
             <ul class="listNav">                
-                <li class="listElement listElementActive">Home</li>
-                <li class="listElement">About</li>
-                <!-- <li class="listElement">Program</i></li> -->
-                <li class="listElement">Ticket</li>
+                <li class="listElement listElementActive"> <a href="index.html">Home</a></li>
+                <li class="listElement"><a href="about.html">About</a></li>
+                <li class="listElement"> <a href="tickets.html">Ticket</a> </li>
             </ul>
         </div>
-        <div class="banner">
-   
+        <div class="banner">   
                 <div class="slogan">
                     "all new, all beautiful"
                 </div>
@@ -49,12 +45,12 @@
                 </div>
       
         </div>
-        <div class="titleMainProgram "> <h4 class="underline-orange">Countries</h4> </div>                     
+        <div class="titleMainProgram "> <a href="#"><h4 class="underline-orange">Countries</h4> </a>  </div>                     
         <div class="mainProgram">  
             <div class="itemMainProgram">
                 <div class="logoMainProgram"><img src="./img/1.png" alt=""></div>
                 <div class="titleProgram">France</div>
-                <div class="descriptionProgram">France has produced legendary romantic music composers.</div>
+                <div class="descriptionProgram"> France has produced legendary romantic music composers.</div>
             </div>
             <div class="itemMainProgram">
                 <div class="logoMainProgram"><img src="./img/2.png" alt=""></div>
@@ -78,13 +74,9 @@
             </div>           
         </div>
         <div class="btnJoin">
-            <!-- <div class="btnJoinInside"> -->
-                <button class="btnJoinCC">Join Euro Classic Festival</button>
-                
-            <!-- </div> -->
-            
+                <button class="btnJoinCC"  onclick="window.location.href = 'tickets.html';" >Join Euro Classic Festival</button>
         </div> 
-        <div class="features"> <h4 class="underline-orange"> Choreographies </h4></div>
+        <div class="features"> <a href="#"><h4 class="underline-orange"> Choreographies </h4></a> </div>
         <div class="speakersContainer">
             <div class="speakers">
                 <div class="imgSpeakers"><img src="./img/Marie.png" alt=""></div>
@@ -137,7 +129,7 @@
 
         </div>
         <div class="footerBanner">
-            <div class="partnerFooter"> <h4 class="underline-orange">Partners</h4></div>
+            <div class="partnerFooter"> <a href="#"><h4 class="underline-orange">Partners</h4></a> </div>
             <div class="listPartnerFooter">
                 <img src="./img/ept.png" alt="">
                 <img src="./img/rtbf.png" alt="">
@@ -149,7 +141,7 @@
         </div>
         <footer class="footer">
             <div class="logoFooter"></div>
-            <div class="rightsFooter"><p>2015 Creative Comms Korea.</p> <p>Some Rights Reserved</p></div>
+            <div class="rightsFooter"><p>2015 Creative Comms Korea.</p> <p>Some Rights Reserved</p> <p>Logos are for educational purposes.</p></div>
         </footer>
     </div>
 </body>
