@@ -2,6 +2,7 @@
  This is a site for a concert event. Here you have an Home, About and Tickets sites.
 
 ![screenshot](./img/Screenshot.png)
+![screenshot](./img/Screenshot1.png)
     
 
 ## Built With
@@ -11,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/JasemDuncan/Concert-Site/7cd18f5e49c6f2247a560749f78c5868c8896e1d/index.html)
+[Live Demo Link](https://rawcdn.githack.com/JasemDuncan/Concert-Site/2766d4ee39870c014623f5851d91e96aaaba06bb/about.html)
 
 
 ## Getting Started
