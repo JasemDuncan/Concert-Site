@@ -116,11 +116,11 @@
 }
 
 .banner {
-  background-image: url('/img/background-large.png');
+  background-image: url('../img/background-large.png');
 }
 
 .bannerTicket {
-  background-image: url('/img/background-large-ticket.png');
+  background-image: url('../img/background-large-ticket.png');
 }
 
 .slogan {
