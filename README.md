@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/JasemDuncan/Concert-Site/2766d4ee39870c014623f5851d91e96aaaba06bb/about.html)
+[Live Demo Link](https://rawcdn.githack.com/JasemDuncan/Concert-Site/651f0de88fa516856815d7318809cf6de36d539f/index.html)
 
 
 ## Getting Started
